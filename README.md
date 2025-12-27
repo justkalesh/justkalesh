@@ -1,5 +1,5 @@
 # 💫 About Me:
-I'm currently working on overall growth in all sectors, but my basic focus to master everything related to ai.<br>I'm looking to collaborate on any project wherever I can learn something.<br>I'm looking for help with API integration.<br>I'm currently learning Flutter(dart).<br>Ask me about anything and I'll learn it if I'm not familiar with it.<br>Fun Fact- I'm a first year cse student but i have worked on 3 projects (2 software + 1 hardware)
+I'm currently working on overall growth in all sectors, but my basic focus to master everything related to ai.<br>I'm looking to collaborate on any project wherever I can learn something.<br>I'm looking for help with API integration.<br>I'm currently learning Flutter(dart).<br>Ask me about anything and I'll learn it if I'm not familiar with it.<br>Fun Fact- I'm a first year cse student but i have worked on 3 projects (2 software + 1 hardware).
 
 
 ## 🌐 Socials:
