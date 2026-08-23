@@ -15,7 +15,8 @@
 <br>
 
 ## 🚀 About Me
-- 🎓 First-year B.Tech CSE (Core) student at **Lovely Professional University (LPU)** (2025-2029)
+
+- 🎓 B.Tech CSE (Core) student at **Lovely Professional University (LPU)** (2025-2029)
 - 💻 Freelance Full-Stack Developer at **Building It Live**
 - ❤️ I code with serious intent and a playful heart. I love turning complex problems into scalable, user-friendly solutions.
 
@@ -39,10 +40,11 @@
 ![MongoDB](https://img.shields.io/badge/-MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
 ![Git](https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github&logoColor=white)
-![Antigravity](https://img.shields.io/badge/-Antigravity_(Gen_AI)-4B0082?style=flat-square&logo=google&logoColor=white)
+![Antigravity](<https://img.shields.io/badge/-Antigravity_(Gen_AI)-4B0082?style=flat-square&logo=google&logoColor=white>)
 ![Stitch](https://img.shields.io/badge/-Stitch-000000?style=flat-square)
 
 ## 🏗️ What I'm Building
+
 - **Building It Live:** Freelance projects focused on performant, top-tier user experiences.
 - **Medfield:** Built with React, Supabase, Gemini API, Vite.
 - **Food-Hunt:** Built with React 19, TypeScript, Vite, Supabase, Firebase Cloud Messaging.
@@ -50,7 +52,9 @@
 ---
 
 ### 🎨 About this Repository
+
 This repository (`justkalesh/justkalesh`) serves double-duty as my **GitHub Profile** and the source code for my **Portfolio Website**.
 
-The portfolio is built with **Vite, Vanilla JS, and TailwindCSS v4** using a custom "Neo-Pop Claydesk" design system. 
+The portfolio is built with **Vite, Vanilla JS, and TailwindCSS v4** using a custom "Neo-Pop Claydesk" design system.
+
 - 🔗 **View the live site:** [justkalesh.github.io/justkalesh](https://justkalesh.github.io/justkalesh/)
