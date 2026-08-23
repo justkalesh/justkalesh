@@ -9,7 +9,8 @@
   <a href="https://justkalesh.github.io/justkalesh/">Website</a> •
   <a href="https://www.linkedin.com/in/justkalesh/">LinkedIn</a> •
   <a href="https://x.com/yours_kalash">X (Twitter)</a> •
-  <a href="https://leetcode.com/u/justkalesh/">LeetCode</a>
+  <a href="https://leetcode.com/u/justkalesh/">LeetCode</a> •
+  <a href="https://www.instagram.com/kalash.who/">Instagram</a>
 </p>
 
 <br>
