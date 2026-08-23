@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Kalash - Resume</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary": "#ffffff",
+                        "surface-container-high": "#dde9ff",
+                        "surface-container-highest": "#d5e3fd",
+                        "on-secondary-container": "#007165",
+                        "surface-dim": "#ccdbf4",
+                        "outline": "#8c706f",
+                        "surface-container": "#e6eeff",
+                        "on-tertiary-fixed": "#261a00",
+                        "primary-fixed": "#ffdad8",
+                        "on-primary-fixed-variant": "#8c1520",
+                        "dot-grid": "#E2E8F0",
+                        "on-surface-variant": "#584140",
+                        "error": "#ba1a1a",
+                        "secondary-fixed": "#62fae3",
+                        "on-secondary": "#ffffff",
+                        "tertiary-fixed": "#ffdf9f",
+                        "secondary-fixed-dim": "#3cddc7",
+                        "on-secondary-fixed-variant": "#005047",
+                        "inverse-primary": "#ffb3b0",
+                        "tertiary-container": "#c59300",
+                        "on-error-container": "#93000a",
+                        "on-secondary-fixed": "#00201c",
+                        "on-primary-fixed": "#410006",
+                        "background": "#f8f9ff",
+                        "secondary-container": "#62fae3",
+                        "outline-variant": "#e0bfbd",
+                        "surface-container-low": "#eff4ff",
+                        "on-primary-container": "#6d0010",
+                        "background-cream": "#FDFBF7",
+                        "on-error": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-variant": "#d5e3fd",
+                        "inverse-on-surface": "#ebf1ff",
+                        "on-surface": "#0d1c2f",
+                        "surface-bright": "#f8f9ff",
+                        "on-tertiary-container": "#433000",
+                        "on-tertiary": "#ffffff",
+                        "primary-fixed-dim": "#ffb3b0",
+                        "tertiary": "#795900",
+                        "tertiary-fixed-dim": "#f9bd22",
+                        "primary": "#ae2f34",
+                        "inverse-surface": "#233144",
+                        "secondary": "#006b5f",
+                        "on-background": "#0d1c2f",
+                        "error-container": "#ffdad6",
+                        "surface-tint": "#ae2f34",
+                        "primary-container": "#ff6b6b",
+                        "on-tertiary-fixed-variant": "#5c4300",
+                        "surface": "#f8f9ff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "section-gap": "96px",
+                        "base": "8px",
+                        "margin-desktop": "48px",
+                        "margin-mobile": "16px"
+                    },
+                    "fontFamily": {
+                        "display-lg": ["Nunito Sans"],
+                        "headline-lg-mobile": ["Nunito Sans"],
+                        "body-md": ["Nunito Sans"],
+                        "body-lg": ["Nunito Sans"],
+                        "label-lg": ["Nunito Sans"],
+                        "label-sm": ["Nunito Sans"],
+                        "headline-md": ["Nunito Sans"],
+                        "headline-lg": ["Nunito Sans"]
+                    },
+                    "fontSize": {
+                        "display-lg": ["56px", { "lineHeight": "1.1", "letterSpacing": "-0.03em", "fontWeight": "900" }],
+                        "headline-lg-mobile": ["32px", { "lineHeight": "1.2", "fontWeight": "800" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "500" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "600" }],
+                        "label-lg": ["14px", { "lineHeight": "1.2", "letterSpacing": "0.02em", "fontWeight": "800" }],
+                        "label-sm": ["12px", { "lineHeight": "1.2", "fontWeight": "700" }],
+                        "headline-md": ["28px", { "lineHeight": "1.3", "fontWeight": "800" }],
+                        "headline-lg": ["40px", { "lineHeight": "1.2", "fontWeight": "800" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            background-color: #FDFBF7;
+            background-image: radial-gradient(#E2E8F0 2px, transparent 2px);
+            background-size: 24px 24px;
+        }
+        
+        .sticker-card {
+            border: 3px solid #584140;
+            box-shadow: 8px 8px 0px 0px #584140;
+            transition: all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+        
+        .sticker-card:hover {
+            transform: translate(-4px, -4px);
+            box-shadow: 12px 12px 0px 0px #584140;
+        }
+        
+        .sticker-card:active {
+            transform: translate(2px, 2px);
+            box-shadow: 4px 4px 0px 0px #584140;
+        }
+        
+        .pill-badge {
+            border: 3px solid #584140;
+            box-shadow: 4px 4px 0px 0px #584140;
+            transition: all 0.2s ease;
+        }
+        
+        .pill-badge:hover {
+            transform: translate(-2px, -2px) rotate(2deg);
+            box-shadow: 6px 6px 0px 0px #584140;
+        }
+        
+        .cat-cursor {
+            position: fixed;
+            pointer-events: none;
+            z-index: 9999;
+            font-size: 2rem;
+            transition: transform 0.1s ease-out;
+            transform-origin: center;
+        }
+    </style>
+</head>
+<body class="text-on-surface font-body-md min-h-screen overflow-x-hidden selection:bg-primary-container selection:text-on-primary-container">
+<!-- Cursor Cat -->
+<div class="cat-cursor" id="cat">🐱</div>
+<!-- Top Navigation -->
+<nav class="sticky top-4 z-50 flex justify-between items-center px-8 py-4 bg-background-cream dark:bg-inverse-surface rounded-full mt-4 mx-auto w-[90%] max-w-4xl border-[3px] border-on-surface shadow-[8px_8px_0px_0px_rgba(174,47,52,1)]">
+<a class="font-headline-md text-headline-md font-black text-primary dark:text-primary-fixed" href="#">
+            Kalash.dev
+        </a>
+<div class="hidden md:flex gap-6 items-center">
+<a class="text-on-surface-variant font-bold hover:translate-y-[-2px] hover:shadow-[10px_10px_0px_0px_rgba(174,47,52,1)] transition-all" href="#">Work</a>
+<a class="text-on-surface-variant font-bold hover:translate-y-[-2px] hover:shadow-[10px_10px_0px_0px_rgba(174,47,52,1)] transition-all" href="#">Skills</a>
+<a class="text-on-surface-variant font-bold hover:translate-y-[-2px] hover:shadow-[10px_10px_0px_0px_rgba(174,47,52,1)] transition-all" href="#">About</a>
+<a class="text-on-surface-variant font-bold hover:translate-y-[-2px] hover:shadow-[10px_10px_0px_0px_rgba(174,47,52,1)] transition-all" href="#">Contact</a>
+</div>
+<a class="text-primary font-extrabold border-b-2 border-primary hidden md:inline-block font-label-lg text-label-lg hover:translate-y-[-2px] hover:shadow-[10px_10px_0px_0px_rgba(174,47,52,1)] transition-all" href="#">
+            Resume
+        </a>
+<button class="md:hidden p-2 text-on-surface">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</nav>
+<!-- Main Content Canvas -->
+<main class="max-w-7xl mx-auto px-gutter pt-margin-desktop pb-section-gap">
+<!-- Header Section -->
+<header class="text-center mb-section-gap relative">
+<div class="absolute -top-12 -left-12 rotate-[-15deg] hidden md:block">
+<span class="material-symbols-outlined text-6xl text-tertiary-container drop-shadow-md">star</span>
+</div>
+<div class="absolute top-12 -right-8 rotate-[25deg] hidden md:block">
+<span class="material-symbols-outlined text-5xl text-secondary drop-shadow-md">bolt</span>
+</div>
+<h1 class="font-display-lg text-display-lg md:text-[80px] text-on-surface mb-base mt-12 relative inline-block z-10">
+                My <span class="text-primary relative inline-block after:content-[''] after:absolute after:bottom-2 after:left-0 after:w-full after:h-4 after:bg-tertiary-container/30 after:-z-10">Sticker Board</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
+                A playful look at my professional journey, skills, and the cool stuff I've built.
+            </p>
+</header>
+<!-- Bento Grid Layout -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 relative z-10">
+<!-- Download CTA (Top Left Highlight) -->
+<div class="md:col-span-4 flex items-center justify-center bg-surface-container rounded-3xl p-8 sticker-card border-secondary rotate-[-2deg]">
+<a class="group relative inline-flex items-center justify-center px-8 py-6 font-label-lg text-label-lg font-extrabold text-on-primary bg-primary-container rounded-full sticker-card shadow-[8px_8px_0px_0px_#584140] hover:shadow-[12px_12px_0px_0px_#584140] hover:bg-primary transition-all overflow-hidden text-xl w-full text-center" href="#">
+                    Grab the PDF 📄
+                </a>
+</div>
+<!-- Experience Card (Main Hero) -->
+<div class="md:col-span-8 bg-surface rounded-3xl p-8 sticker-card rotate-[1deg]">
+<div class="flex items-center gap-4 mb-6 border-b-[3px] border-on-surface pb-4">
+<span class="material-symbols-outlined text-4xl text-primary bg-primary-fixed p-3 rounded-full border-[3px] border-on-surface">work</span>
+<h2 class="font-headline-md text-headline-md font-black">Current Gig</h2>
+</div>
+<div class="relative pl-8 border-l-[4px] border-dashed border-outline-variant">
+<div class="absolute -left-[14px] top-0 w-6 h-6 bg-secondary-container rounded-full border-[3px] border-on-surface"></div>
+<h3 class="font-body-lg text-body-lg font-extrabold text-on-surface mb-1">Freelance Full-Stack Developer</h3>
+<p class="font-body-md text-body-md text-primary font-bold mb-3">Building It Live</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant mb-4 bg-surface-container-high inline-block px-3 py-1 rounded-full border-[2px] border-on-surface">Jan 2026 - Present</p>
+<p class="font-body-md text-body-md text-on-surface">
+                        Building highly interactive, performant web applications using modern stacks. Focusing on delivering top-tier user experiences with a dash of playfulness.
+                    </p>
+</div>
+</div>
+<!-- Skills Section (Wide Strip) -->
+<div class="md:col-span-12 bg-surface-container-highest rounded-3xl p-8 sticker-card relative overflow-hidden">
+<div class="absolute top-4 right-4 text-tertiary-container rotate-12 opacity-50">
+<span class="material-symbols-outlined text-8xl">code_blocks</span>
+</div>
+<div class="flex items-center gap-4 mb-8">
+<span class="material-symbols-outlined text-4xl text-tertiary bg-tertiary-fixed p-3 rounded-full border-[3px] border-on-surface">psychology</span>
+<h2 class="font-headline-md text-headline-md font-black">Tech Arsenal</h2>
+</div>
+<div class="flex flex-wrap gap-4 relative z-10">
+<!-- Pill Badges -->
+<div class="pill-badge bg-[#3776AB] text-white px-6 py-3 rounded-full font-label-lg text-label-lg font-bold flex items-center gap-2 rotate-[1deg]">Python</div>
+<div class="pill-badge bg-[#61DAFB] text-on-surface px-6 py-3 rounded-full font-label-lg text-label-lg font-bold flex items-center gap-2 rotate-[-2deg]">React</div>
+<div class="pill-badge bg-[#3178C6] text-white px-6 py-3 rounded-full font-label-lg text-label-lg font-bold flex items-center gap-2 rotate-[3deg]">TypeScript</div>
+<div class="pill-badge bg-[#339933] text-white px-6 py-3 rounded-full font-label-lg text-label-lg font-bold flex items-center gap-2 rotate-[-1deg]">Node.js</div>
+<div class="pill-badge bg-[#F29111] text-white px-6 py-3 rounded-full font-label-lg text-label-lg font-bold flex items-center gap-2 rotate-[2deg]">SQL</div>
+<div class="pill-badge bg-[#06B6D4] text-white px-6 py-3 rounded-full font-label-lg text-label-lg font-bold flex items-center gap-2 rotate-[-3deg]">Tailwind</div>
+<div class="pill-badge bg-[#02569B] text-white px-6 py-3 rounded-full font-label-lg text-label-lg font-bold flex items-center gap-2 rotate-[1deg]">Flutter</div>
+</div>
+</div>
+<!-- Education Section (Two Cards) -->
+<div class="md:col-span-6 bg-surface rounded-3xl p-8 sticker-card border-secondary rotate-[-1deg] relative">
+<div class="absolute -top-4 -right-4 bg-tertiary-fixed w-12 h-12 rounded-full border-[3px] border-on-surface flex items-center justify-center shadow-[4px_4px_0px_0px_#584140] z-20">
+<span class="material-symbols-outlined text-on-surface">school</span>
+</div>
+<h3 class="font-body-lg text-body-lg font-extrabold text-on-surface mb-2">B.Tech CSE</h3>
+<p class="font-body-md text-body-md text-secondary font-bold mb-2">Lovely Professional University</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container px-3 py-1 rounded-full border-[2px] border-on-surface inline-block">2025 - 2029</p>
+</div>
+<div class="md:col-span-6 bg-surface rounded-3xl p-8 sticker-card border-secondary rotate-[1deg] relative">
+<div class="absolute -bottom-4 -right-4 bg-primary-fixed w-12 h-12 rounded-full border-[3px] border-on-surface flex items-center justify-center shadow-[4px_4px_0px_0px_#584140] z-20">
+<span class="material-symbols-outlined text-on-surface">menu_book</span>
+</div>
+<h3 class="font-body-lg text-body-lg font-extrabold text-on-surface mb-2">Class XII</h3>
+<p class="font-body-md text-body-md text-secondary font-bold mb-2">High School Diploma</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container px-3 py-1 rounded-full border-[2px] border-on-surface inline-block">Graduated 2025</p>
+</div>
+<!-- Graphic Filler Card -->
+<div class="md:col-span-12 bg-primary-fixed-dim rounded-3xl p-8 sticker-card flex items-center justify-center min-h-[200px] relative overflow-hidden group">
+<div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMiIgY3k9IjIiIHI9IjIiIGZpbGw9IiM4YzE1MjAiIGZpbGwtb3BhY2l0eT0iLjIiLz48L3N2Zz4=')] opacity-20 group-hover:scale-110 transition-transform duration-500"></div>
+<div class="relative z-10 flex flex-col items-center">
+<span class="material-symbols-outlined text-6xl text-on-primary-fixed-variant mb-4 animate-bounce">rocket_launch</span>
+<p class="font-headline-md text-headline-md font-black text-on-primary-fixed-variant text-center">Let's build something awesome.</p>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 px-gutter flex flex-col md:flex-row justify-between items-center gap-base bg-surface-container-low dark:bg-inverse-surface rounded-t-lg border-t-[3px] border-on-surface mt-section-gap">
+<div class="font-headline-md text-headline-md text-on-surface">
+            Kalash.dev
+        </div>
+<p class="font-body-md text-body-md text-on-surface-variant">Built with ☕ and code by Kalash</p>
+<div class="flex gap-4">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary hover:underline transition-colors duration-200" href="#">GitHub</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary hover:underline transition-colors duration-200" href="#">LinkedIn</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary hover:underline transition-colors duration-200" href="#">Twitter</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary hover:underline transition-colors duration-200" href="#">Email</a>
+</div>
+</footer>
+<!-- Interactive JS Scripts -->
+<script>
+        // Cursor Chasing Cat Logic
+        const cat = document.getElementById('cat');
+        let mouseX = window.innerWidth / 2;
+        let mouseY = window.innerHeight / 2;
+        let catX = mouseX;
+        let catY = mouseY;
+        let isMoving = false;
+        let direction = 1;
+
+        document.addEventListener('mousemove', (e) => {
+            mouseX = e.clientX;
+            mouseY = e.clientY;
+            
+            // Determine direction for flipping the cat
+            if (e.movementX > 0) direction = 1;
+            else if (e.movementX < 0) direction = -1;
+        });
+
+        function animateCat() {
+            // Easing factor
+            const dx = mouseX - catX;
+            const dy = mouseY - catY;
+            
+            catX += dx * 0.1;
+            catY += dy * 0.1;
+
+            // Add a slight bounce when moving fast
+            const speed = Math.sqrt(dx*dx + dy*dy);
+            const bounce = speed > 5 ? Math.sin(Date.now() / 50) * 10 : 0;
+
+            // Offset the cat so the cursor is near its nose, not center
+            cat.style.transform = `translate(${catX + 15}px, ${catY + 15 + bounce}px) scaleX(${direction})`;
+
+            requestAnimationFrame(animateCat);
+        }
+
+        animateCat();
+
+        // Randomize initial sticker rotations slightly for natural feel on load
+        document.addEventListener('DOMContentLoaded', () => {
+            const stickers = document.querySelectorAll('.sticker-card, .pill-badge');
+            stickers.forEach(sticker => {
+                // If it doesn't already have a hardcoded rotation class
+                if(!sticker.className.includes('rotate-')) {
+                     const randomRot = (Math.random() * 4 - 2).toFixed(1); // -2 to +2 deg
+                     sticker.style.transform = `rotate(${randomRot}deg)`;
+                }
+            });
+        });
+    </script>
+</body></html>

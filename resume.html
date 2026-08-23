@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Kalash — B.Tech CSE Student & Full-Stack Developer building playful, interactive digital experiences with modern web technologies." />
+  <title>Kalash - Resume</title>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="stylesheet" href="/src/style.css" />
+  <style>
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body class="bg-background-cream bg-dot-pattern min-h-screen text-on-surface font-[var(--font-body)] overflow-x-hidden relative flex flex-col">
+
+  <!-- ═══════════════════════════════════════════
+       TOP NAV BAR (Neo-Pop Pill)
+       ═══════════════════════════════════════════ -->
+  <nav class="relative z-50 flex justify-between items-center px-[24px] py-4 mt-[16px] mb-[16px] mx-auto w-[90%] rounded-full border-[3px] border-on-surface bg-surface-container shadow-[8px_8px_0px_0px_rgba(13,28,47,1)]" id="main-nav">
+
+    <!-- Brand Logo -->
+    <a href="index.html" class="text-headline-md font-extrabold text-primary tracking-tight">
+      Kalash
+    </a>
+
+    <!-- Desktop Navigation -->
+    <div class="hidden md:flex gap-4 items-center relative" id="desktop-nav">
+      <!-- Sliding Pill -->
+      <div id="nav-pill" class="absolute pointer-events-none rounded-full border-[3px] border-on-surface bg-surface-container shadow-[4px_4px_0px_0px_rgba(13,28,47,1)] transition-all duration-300 ease-[cubic-bezier(0.25,1,0.5,1)] z-0" style="opacity: 0; animation: fadeIn 0.3s forwards 0.1s;"></div>
+
+      <a href="index.html" class="nav-item active text-primary font-extrabold text-label-lg px-4 py-2 relative z-10 transition-colors">Home</a>
+      <a href="about.html" class="nav-item text-on-surface-variant font-medium text-label-lg px-4 py-2 relative z-10 transition-colors">About Me</a>
+      <a href="resume.html" class="nav-item text-on-surface-variant font-medium text-label-lg px-4 py-2 relative z-10 transition-colors">Resume</a>
+      <a href="projects.html" class="nav-item text-on-surface-variant font-medium text-label-lg px-4 py-2 relative z-10 transition-colors">Projects</a>
+      <a href="#" class="nav-item text-on-surface-variant font-medium text-label-lg px-4 py-2 relative z-10 transition-colors">Certification</a>
+      <a href="#" class="nav-item text-on-surface-variant font-medium text-label-lg px-4 py-2 relative z-10 transition-colors">More</a>
+    </div>
+
+    <!-- CTA Button -->
+    <button class="hidden md:flex px-6 py-2 rounded-full border-[3px] border-on-surface bg-primary text-on-primary text-label-lg font-extrabold neo-btn-hover shadow-[6px_6px_0px_0px_rgba(13,28,47,1)] cursor-pointer" style="--hover-shadow-color: rgba(13,28,47,1);">
+      Hire Me
+    </button>
+
+    <!-- Mobile Menu Toggle -->
+    <button class="md:hidden text-on-surface p-2 cursor-pointer" id="mobile-menu-btn" aria-label="Open menu">
+      <span class="material-symbols-outlined text-3xl">menu</span>
+    </button>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════
+       MOBILE MENU OVERLAY
+       ═══════════════════════════════════════════ -->
+  <div class="mobile-menu fixed inset-0 bg-background-cream bg-dot-pattern z-[60] flex flex-col items-center justify-center gap-8 md:hidden" id="mobile-menu">
+    <button class="absolute top-6 right-6 text-primary cursor-pointer" id="mobile-menu-close" aria-label="Close menu">
+      <span class="material-symbols-outlined text-3xl">close</span>
+    </button>
+    <a href="index.html" class="text-headline-md text-primary font-extrabold">Home</a>
+    <a href="about.html" class="text-headline-md text-on-surface-variant hover:text-primary transition-colors font-bold">About Me</a>
+    <a href="resume.html" class="text-headline-md text-on-surface-variant hover:text-primary transition-colors font-bold">Resume</a>
+    <a href="projects.html" class="text-headline-md text-on-surface-variant hover:text-primary transition-colors font-bold">Projects</a>
+    <a href="#" class="text-headline-md text-on-surface-variant hover:text-primary transition-colors font-bold">Certification</a>
+    <a href="#" class="text-headline-md text-on-surface-variant hover:text-primary transition-colors font-bold">More</a>
+    <button class="px-8 py-3 rounded-full border-[3px] border-on-surface bg-primary text-on-primary text-label-lg font-extrabold shadow-[4px_4px_0px_0px_rgba(13,28,47,1)] mt-4 cursor-pointer">
+      Hire Me
+    </button>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       HERO SECTION
+       ═══════════════════════════════════════════ -->
+  <main class="relative max-w-7xl mx-auto px-gutter pt-margin-desktop pb-section-gap">
+<!-- Header Section -->
+<header class="text-center mb-section-gap relative">
+<div class="absolute -top-12 -left-12 rotate-[-15deg] hidden md:block">
+<span class="material-symbols-outlined text-6xl text-tertiary-container drop-shadow-md">star</span>
+</div>
+<div class="absolute top-12 -right-8 rotate-[25deg] hidden md:block">
+<span class="material-symbols-outlined text-5xl text-secondary drop-shadow-md">bolt</span>
+</div>
+<h1 class="text-display-lg font-black md:text-[80px] text-on-surface mb-base mt-12 relative inline-block z-10">
+                My <span class="text-primary relative inline-block after:content-[''] after:absolute after:bottom-2 after:left-0 after:w-full after:h-4 after:bg-tertiary-container/30 after:-z-10">Sticker Board</span>
+</h1>
+<p class="text-body-lg text-on-surface-variant max-w-2xl mx-auto">
+                A playful look at my professional journey, skills, and the cool stuff I've built.
+            </p>
+</header>
+<!-- Bento Grid Layout -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 relative z-10">
+<!-- Download CTA (Top Left Highlight) -->
+<div class="md:col-span-4 flex items-center justify-center bg-surface-container rounded-3xl p-8 border-[3px] border-on-surface shadow-[8px_8px_0px_0px_rgba(13,28,47,1)] bouncy-hover border-on-surface rotate-[-2deg]">
+<a class="group relative inline-flex items-center justify-center px-8 py-6 text-label-lg font-bold font-extrabold text-on-primary bg-primary-container rounded-full border-[3px] border-on-surface neo-btn-hover shadow-[8px_8px_0px_0px_rgba(13,28,47,1)] hover:bg-primary transition-all overflow-hidden text-xl w-full text-center" href="#">
+                    Grab the PDF 📄
+                </a>
+</div>
+<!-- Experience Card (Main Hero) -->
+<div class="md:col-span-8 bg-surface rounded-3xl p-8 border-[3px] border-on-surface shadow-[8px_8px_0px_0px_rgba(13,28,47,1)] bouncy-hover rotate-[1deg]">
+<div class="flex items-center gap-4 mb-6 border-b-[3px] border-on-surface pb-4">
+<span class="material-symbols-outlined text-4xl text-primary bg-primary-fixed p-3 rounded-full border-[3px] border-on-surface">work</span>
+<h2 class="text-headline-md font-extrabold font-black">Current Gig</h2>
+</div>
+<div class="relative pl-8 border-l-[4px] border-dashed border-outline-variant">
+<div class="absolute -left-[14px] top-0 w-6 h-6 bg-secondary-container rounded-full border-[3px] border-on-surface"></div>
+<h3 class="text-body-lg font-extrabold text-on-surface mb-1">Freelance Full-Stack Developer</h3>
+<p class="text-body-md text-primary font-bold mb-3">Building It Live</p>
+<p class="text-label-sm text-on-surface-variant mb-4 bg-surface-container-high inline-block px-3 py-1 rounded-full border-[2px] border-on-surface">Jan 2026 - Present</p>
+<p class="text-body-md text-on-surface">
+                        Building highly interactive, performant web applications using modern stacks. Focusing on delivering top-tier user experiences with a dash of playfulness.
+                    </p>
+</div>
+</div>
+<!-- Skills Section (Wide Strip) -->
+<div class="md:col-span-12 bg-surface-container-highest rounded-3xl p-8 border-[3px] border-on-surface shadow-[8px_8px_0px_0px_rgba(13,28,47,1)] bouncy-hover relative overflow-hidden">
+<div class="absolute top-4 right-4 text-tertiary-container rotate-12 opacity-50">
+<span class="material-symbols-outlined text-8xl">code_blocks</span>
+</div>
+<div class="flex items-center gap-4 mb-8">
+<span class="material-symbols-outlined text-4xl text-tertiary bg-tertiary-fixed p-3 rounded-full border-[3px] border-on-surface">psychology</span>
+<h2 class="text-headline-md font-extrabold font-black">Tech Arsenal</h2>
+</div>
+<div class="flex flex-wrap gap-4 relative z-10">
+<!-- Pill Badges -->
+<div class="border-[2px] border-on-surface shadow-[4px_4px_0px_0px_rgba(13,28,47,1)] hover:scale-110 active:scale-95 transition-transform bg-[#3776AB] text-white px-6 py-3 rounded-full text-label-lg font-bold flex items-center gap-2 rotate-[1deg]">Python</div>
+<div class="border-[2px] border-on-surface shadow-[4px_4px_0px_0px_rgba(13,28,47,1)] hover:scale-110 active:scale-95 transition-transform bg-[#F0DB4F] text-black px-6 py-3 rounded-full text-label-lg font-bold flex items-center gap-2 rotate-[-2deg]">JavaScript</div>
+<div class="border-[2px] border-on-surface shadow-[4px_4px_0px_0px_rgba(13,28,47,1)] hover:scale-110 active:scale-95 transition-transform bg-[#A8B9CC] text-on-surface px-6 py-3 rounded-full text-label-lg font-bold flex items-center gap-2 rotate-[3deg]">C/C++</div>
+<div class="border-[2px] border-on-surface shadow-[4px_4px_0px_0px_rgba(13,28,47,1)] hover:scale-110 active:scale-95 transition-transform bg-[#E34F26] text-white px-6 py-3 rounded-full text-label-lg font-bold flex items-center gap-2 rotate-[-1deg]">HTML/CSS</div>
+<div class="border-[2px] border-on-surface shadow-[4px_4px_0px_0px_rgba(13,28,47,1)] hover:scale-110 active:scale-95 transition-transform bg-[#339933] text-white px-6 py-3 rounded-full text-label-lg font-bold flex items-center gap-2 rotate-[2deg]">Node.js</div>
+<div class="border-[2px] border-on-surface shadow-[4px_4px_0px_0px_rgba(13,28,47,1)] hover:scale-110 active:scale-95 transition-transform bg-[#61DAFB] text-on-surface px-6 py-3 rounded-full text-label-lg font-bold flex items-center gap-2 rotate-[-3deg]">React</div>
+<div class="border-[2px] border-on-surface shadow-[4px_4px_0px_0px_rgba(13,28,47,1)] hover:scale-110 active:scale-95 transition-transform bg-[#02569B] text-white px-6 py-3 rounded-full text-label-lg font-bold flex items-center gap-2 rotate-[1deg]">Flutter</div>
+<div class="border-[2px] border-on-surface shadow-[4px_4px_0px_0px_rgba(13,28,47,1)] hover:scale-110 active:scale-95 transition-transform bg-[#3ECF8E] text-on-surface px-6 py-3 rounded-full text-label-lg font-bold flex items-center gap-2 rotate-[-1deg]">Supabase</div>
+<div class="border-[2px] border-on-surface shadow-[4px_4px_0px_0px_rgba(13,28,47,1)] hover:scale-110 active:scale-95 transition-transform bg-[#47A248] text-white px-6 py-3 rounded-full text-label-lg font-bold flex items-center gap-2 rotate-[2deg]">MongoDB</div>
+<div class="border-[2px] border-on-surface shadow-[4px_4px_0px_0px_rgba(13,28,47,1)] hover:scale-110 active:scale-95 transition-transform bg-[#F05032] text-white px-6 py-3 rounded-full text-label-lg font-bold flex items-center gap-2 rotate-[-2deg]">Git / GitHub</div>
+<div class="border-[2px] border-on-surface shadow-[4px_4px_0px_0px_rgba(13,28,47,1)] hover:scale-110 active:scale-95 transition-transform bg-surface text-on-surface px-6 py-3 rounded-full text-label-lg font-bold flex items-center gap-2 rotate-[3deg]">Stitch</div>
+</div>
+</div>
+<!-- Education Section (Three Cards) -->
+<div class="md:col-span-4 bg-surface rounded-3xl p-8 border-[3px] border-on-surface shadow-[8px_8px_0px_0px_rgba(13,28,47,1)] bouncy-hover rotate-[1deg] relative flex flex-col">
+<div class="absolute -top-4 -right-4 bg-tertiary-fixed w-12 h-12 rounded-full border-[3px] border-on-surface flex items-center justify-center shadow-[4px_4px_0px_0px_rgba(13,28,47,1)] z-20">
+<span class="material-symbols-outlined text-on-surface">school</span>
+</div>
+<h3 class="text-body-lg font-extrabold text-on-surface mb-2">B.Tech Computer Science and Engineering - (Core)</h3>
+<p class="text-body-md text-secondary font-bold mb-2">Lovely Professional University (LPU)</p>
+<div class="mt-auto pt-4">
+<p class="text-label-sm text-on-surface-variant bg-surface-container px-3 py-1 rounded-full border-[2px] border-on-surface inline-block">2025 - 2029</p>
+</div>
+</div>
+<div class="md:col-span-4 bg-surface rounded-3xl p-8 border-[3px] border-on-surface shadow-[8px_8px_0px_0px_rgba(13,28,47,1)] bouncy-hover rotate-[-1deg] relative flex flex-col">
+<div class="absolute -top-4 -right-4 bg-primary-fixed w-12 h-12 rounded-full border-[3px] border-on-surface flex items-center justify-center shadow-[4px_4px_0px_0px_rgba(13,28,47,1)] z-20">
+<span class="material-symbols-outlined text-on-surface">menu_book</span>
+</div>
+<h3 class="text-body-lg font-extrabold text-on-surface mb-2">Senior Secondary Schooling (12th)</h3>
+<p class="text-body-md text-secondary font-bold mb-1">SLDJ Inter College, Gorakhpur</p>
+<p class="text-label-sm text-on-surface-variant mb-4">Achieved 74% in UP Board.</p>
+<div class="mt-auto pt-4">
+<p class="text-label-sm text-on-surface-variant bg-surface-container px-3 py-1 rounded-full border-[2px] border-on-surface inline-block">2023 - 2025</p>
+</div>
+</div>
+<div class="md:col-span-4 bg-surface rounded-3xl p-8 border-[3px] border-on-surface shadow-[8px_8px_0px_0px_rgba(13,28,47,1)] bouncy-hover rotate-[2deg] relative flex flex-col">
+<div class="absolute -top-4 -right-4 bg-secondary-fixed w-12 h-12 rounded-full border-[3px] border-on-surface flex items-center justify-center shadow-[4px_4px_0px_0px_rgba(13,28,47,1)] z-20">
+<span class="material-symbols-outlined text-on-surface">import_contacts</span>
+</div>
+<h3 class="text-body-lg font-extrabold text-on-surface mb-2">Secondary Schooling (10th)</h3>
+<p class="text-body-md text-secondary font-bold mb-1">Aatmdeep Vidyalaya, Gorakhpur</p>
+<p class="text-label-sm text-on-surface-variant mb-4">Achieved 86% in CBSE Board.</p>
+<div class="mt-auto pt-4">
+<p class="text-label-sm text-on-surface-variant bg-surface-container px-3 py-1 rounded-full border-[2px] border-on-surface inline-block">2021 - 2023</p>
+</div>
+</div>
+<!-- Graphic Filler Card -->
+<div class="md:col-span-12 bg-primary-fixed-dim rounded-3xl p-8 border-[3px] border-on-surface shadow-[8px_8px_0px_0px_rgba(13,28,47,1)] bouncy-hover flex items-center justify-center min-h-[200px] relative overflow-hidden group">
+<div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMiIgY3k9IjIiIHI9IjIiIGZpbGw9IiM4YzE1MjAiIGZpbGwtb3BhY2l0eT0iLjIiLz48L3N2Zz4=')] opacity-20 group-hover:scale-110 transition-transform duration-500"></div>
+<div class="relative z-10 flex flex-col items-center">
+<span class="material-symbols-outlined text-6xl text-on-primary-fixed-variant mb-4 animate-bounce">rocket_launch</span>
+<p class="text-headline-md font-extrabold font-black text-on-primary-fixed-variant text-center">Let's build something awesome.</p>
+</div>
+</div>
+</div>
+
+    
+  
+  
+  </main>
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+       ═══════════════════════════════════════════ -->
+  <footer class="w-full border-t-[3px] border-on-surface mt-[96px] bg-background-cream flex flex-col md:flex-row justify-between items-center px-[16px] md:pl-[48px] md:pr-[120px] pt-[24px] pb-[80px] md:pb-[24px]">
+
+    <!-- Brand -->
+    <div class="text-headline-md font-extrabold text-on-surface mb-4 md:mb-0">
+      Kalash
+    </div>
+
+    <!-- Copyright -->
+    <div class="text-body-md text-on-surface-variant text-center md:text-left mb-4 md:mb-0">
+      Made by <a href="https://buildingitlive.com" target="_blank" rel="noopener noreferrer" class="font-bold text-primary hover:underline hover:text-primary-container transition-colors">Building It Live.</a>
+    </div>
+
+    <!-- Links -->
+    <div class="flex gap-6">
+      <a href="https://github.com/justkalesh" target="_blank" rel="noopener noreferrer" class="text-label-sm text-on-surface-variant hover:text-primary hover:scale-105 transition-transform active:scale-95 font-bold">GitHub</a>
+      <a href="https://www.linkedin.com/in/justkalesh/" target="_blank" rel="noopener noreferrer" class="text-label-sm text-on-surface-variant hover:text-primary hover:scale-105 transition-transform active:scale-95 font-bold">LinkedIn</a>
+      <a href="https://x.com/yours_kalash" target="_blank" rel="noopener noreferrer" class="text-label-sm text-on-surface-variant hover:text-primary hover:scale-105 transition-transform active:scale-95 font-bold">X</a>
+      <a href="https://leetcode.com/u/justkalesh/" target="_blank" rel="noopener noreferrer" class="text-label-sm text-on-surface-variant hover:text-primary hover:scale-105 transition-transform active:scale-95 font-bold">LeetCode</a>
+    </div>
+  </footer>
+
+  <!-- ═══════════════════════════════════════════
+       SCROLL TO TOP BUTTON
+       ═══════════════════════════════════════════ -->
+  <button id="scroll-to-top" class="fixed bottom-4 right-4 md:bottom-8 md:right-8 w-12 h-12 md:w-14 md:h-14 rounded-full border-[3px] border-on-surface bg-primary text-on-primary flex items-center justify-center shadow-[4px_4px_0px_0px_rgba(13,28,47,1)] opacity-0 pointer-events-none transition-all duration-300 hover:scale-110 active:scale-95 hover:shadow-[2px_2px_0px_0px_rgba(13,28,47,1)] active:shadow-[0px_0px_0px_0px_rgba(13,28,47,1)]" style="z-index: 9990;" aria-label="Scroll to top">
+    <svg class="w-5 h-5 md:w-6 md:h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 19V5M5 12l7-7 7 7"/>
+    </svg>
+  </button>
+
+  <!-- ═══════════════════════════════════════════
+       CUSTOM CURSOR
+       ═══════════════════════════════════════════ -->
+  <div class="hidden md:block fixed pointer-events-none drop-shadow-md" id="custom-cursor" style="will-change: transform; left: 0; top: 0; transform-origin: 17.33px 2.66px; width: 32px; height: 32px; z-index: 9999;">
+    <svg width="32" height="32" viewBox="0 0 24 24" fill="#ffffff" stroke="#1c1b1e" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 2C10.9 2 10 2.9 10 4V10.5C9.5 10.2 8.8 10 8 10C6.3 10 5 11.3 5 13L8 20H16L19 14V11C19 9.9 18.1 9 17 9H16V4C16 2.9 15.1 2 14 2H12Z" />
+    </svg>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

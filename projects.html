@@ -31,8 +31,8 @@
       <div id="nav-pill" class="absolute pointer-events-none rounded-full border-[3px] border-on-surface bg-surface-container shadow-[4px_4px_0px_0px_rgba(13,28,47,1)] transition-all duration-300 ease-[cubic-bezier(0.25,1,0.5,1)] z-0" style="opacity: 0; animation: fadeIn 0.3s forwards 0.1s;"></div>
 
       <a href="index.html" class="nav-item text-on-surface-variant font-medium text-label-lg px-4 py-2 relative z-10 transition-colors">Home</a>
-      <a href="#" class="nav-item text-on-surface-variant font-medium text-label-lg px-4 py-2 relative z-10 transition-colors">About Me</a>
-      <a href="#" class="nav-item text-on-surface-variant font-medium text-label-lg px-4 py-2 relative z-10 transition-colors">Resume</a>
+      <a href="about.html" class="nav-item text-on-surface-variant font-medium text-label-lg px-4 py-2 relative z-10 transition-colors">About Me</a>
+      <a href="resume.html" class="nav-item text-on-surface-variant font-medium text-label-lg px-4 py-2 relative z-10 transition-colors">Resume</a>
       <a href="projects.html" class="nav-item active text-primary font-extrabold text-label-lg px-4 py-2 relative z-10 transition-colors">Projects</a>
       <a href="#" class="nav-item text-on-surface-variant font-medium text-label-lg px-4 py-2 relative z-10 transition-colors">Certification</a>
       <a href="#" class="nav-item text-on-surface-variant font-medium text-label-lg px-4 py-2 relative z-10 transition-colors">More</a>
@@ -57,8 +57,8 @@
       <span class="material-symbols-outlined text-3xl">close</span>
     </button>
     <a href="index.html" class="text-headline-md text-on-surface-variant hover:text-primary transition-colors font-bold">Home</a>
-    <a href="#" class="text-headline-md text-on-surface-variant hover:text-primary transition-colors font-bold">About Me</a>
-    <a href="#" class="text-headline-md text-on-surface-variant hover:text-primary transition-colors font-bold">Resume</a>
+    <a href="about.html" class="text-headline-md text-on-surface-variant hover:text-primary transition-colors font-bold">About Me</a>
+    <a href="resume.html" class="text-headline-md text-on-surface-variant hover:text-primary transition-colors font-bold">Resume</a>
     <a href="projects.html" class="text-headline-md text-primary font-extrabold">Projects</a>
     <a href="#" class="text-headline-md text-on-surface-variant hover:text-primary transition-colors font-bold">Certification</a>
     <a href="#" class="text-headline-md text-on-surface-variant hover:text-primary transition-colors font-bold">More</a>
@@ -70,7 +70,7 @@
   <!-- ═══════════════════════════════════════════
        PAGE HEADER
        ═══════════════════════════════════════════ -->
-  <main class="flex-grow px-[16px] md:px-[48px] py-[96px] max-w-7xl mx-auto w-full">
+  <main class="relative flex-grow px-[16px] md:px-[48px] py-[96px] max-w-7xl mx-auto w-full">
 
     <!-- Title Area -->
     <div class="mb-16 text-center">
@@ -115,9 +115,11 @@
         <!-- Tech Stickers -->
         <div class="flex flex-wrap gap-3 mt-auto">
           <span class="inline-block bg-secondary-container text-on-secondary-container text-label-sm px-4 py-2 rounded-full border-[2px] border-on-surface sticker-rotate-1 shadow-[2px_2px_0px_0px_rgba(13,28,47,1)] font-bold">React 19</span>
-          <span class="inline-block bg-tertiary-container text-on-tertiary-container text-label-sm px-4 py-2 rounded-full border-[2px] border-on-surface sticker-rotate-2 shadow-[2px_2px_0px_0px_rgba(13,28,47,1)] font-bold">Supabase</span>
-          <span class="inline-block bg-surface-variant text-on-surface-variant text-label-sm px-4 py-2 rounded-full border-[2px] border-on-surface sticker-rotate-3 shadow-[2px_2px_0px_0px_rgba(13,28,47,1)] font-bold">TypeScript</span>
-          <span class="inline-block bg-primary-fixed text-on-primary-fixed text-label-sm px-4 py-2 rounded-full border-[2px] border-on-surface sticker-rotate-1 shadow-[2px_2px_0px_0px_rgba(13,28,47,1)] font-bold">Gemini API</span>
+          <span class="inline-block bg-tertiary-container text-on-tertiary-container text-label-sm px-4 py-2 rounded-full border-[2px] border-on-surface sticker-rotate-2 shadow-[2px_2px_0px_0px_rgba(13,28,47,1)] font-bold">TypeScript</span>
+          <span class="inline-block bg-primary-fixed text-on-primary-fixed text-label-sm px-4 py-2 rounded-full border-[2px] border-on-surface sticker-rotate-3 shadow-[2px_2px_0px_0px_rgba(13,28,47,1)] font-bold">Vite</span>
+          <span class="inline-block bg-surface-variant text-on-surface-variant text-label-sm px-4 py-2 rounded-full border-[2px] border-on-surface sticker-rotate-1 shadow-[2px_2px_0px_0px_rgba(13,28,47,1)] font-bold">Supabase</span>
+          <span class="inline-block bg-secondary-fixed text-on-secondary-fixed text-label-sm px-4 py-2 rounded-full border-[2px] border-on-surface sticker-rotate-2 shadow-[2px_2px_0px_0px_rgba(13,28,47,1)] font-bold">Google Gemini API</span>
+          <span class="inline-block bg-tertiary-fixed text-on-tertiary-fixed text-label-sm px-4 py-2 rounded-full border-[2px] border-on-surface sticker-rotate-3 shadow-[2px_2px_0px_0px_rgba(13,28,47,1)] font-bold">Firebase Cloud Messaging</span>
           <a href="https://food-hunt.app" target="_blank" rel="noopener noreferrer" class="inline-block bg-primary text-on-primary text-label-sm px-4 py-2 rounded-full border-[2px] border-on-surface sticker-rotate-2 shadow-[2px_2px_0px_0px_rgba(13,28,47,1)] font-bold hover:scale-110 transition-transform">Live 🔗</a>
           <a href="https://github.com/justkalesh/foodhunt101" target="_blank" rel="noopener noreferrer" class="inline-block bg-on-surface text-surface text-label-sm px-4 py-2 rounded-full border-[2px] border-on-surface sticker-rotate-3 shadow-[2px_2px_0px_0px_rgba(13,28,47,1)] font-bold hover:scale-110 transition-transform">GitHub 🔗</a>
         </div>
@@ -154,9 +156,12 @@
 
         <!-- Tech Stickers -->
         <div class="flex flex-wrap gap-3 mt-auto">
-          <span class="inline-block bg-primary-container text-on-primary-container text-label-sm px-4 py-2 rounded-full border-[2px] border-on-surface sticker-rotate-2 shadow-[2px_2px_0px_0px_rgba(13,28,47,1)] font-bold">React</span>
-          <span class="inline-block bg-secondary-fixed text-on-secondary-fixed text-label-sm px-4 py-2 rounded-full border-[2px] border-on-surface sticker-rotate-1 shadow-[2px_2px_0px_0px_rgba(13,28,47,1)] font-bold">Supabase</span>
-          <span class="inline-block bg-tertiary-fixed text-on-tertiary-fixed text-label-sm px-4 py-2 rounded-full border-[2px] border-on-surface sticker-rotate-3 shadow-[2px_2px_0px_0px_rgba(13,28,47,1)] font-bold">Gemini API</span>
+          <span class="inline-block bg-primary-container text-on-primary-container text-label-sm px-4 py-2 rounded-full border-[2px] border-on-surface sticker-rotate-2 shadow-[2px_2px_0px_0px_rgba(13,28,47,1)] font-bold">JavaScript</span>
+          <span class="inline-block bg-secondary-fixed text-on-secondary-fixed text-label-sm px-4 py-2 rounded-full border-[2px] border-on-surface sticker-rotate-1 shadow-[2px_2px_0px_0px_rgba(13,28,47,1)] font-bold">React</span>
+          <span class="inline-block bg-tertiary-fixed text-on-tertiary-fixed text-label-sm px-4 py-2 rounded-full border-[2px] border-on-surface sticker-rotate-3 shadow-[2px_2px_0px_0px_rgba(13,28,47,1)] font-bold">Supabase</span>
+          <span class="inline-block bg-surface-variant text-on-surface-variant text-label-sm px-4 py-2 rounded-full border-[2px] border-on-surface sticker-rotate-1 shadow-[2px_2px_0px_0px_rgba(13,28,47,1)] font-bold">Gemini Api</span>
+          <span class="inline-block bg-primary-fixed text-on-primary-fixed text-label-sm px-4 py-2 rounded-full border-[2px] border-on-surface sticker-rotate-2 shadow-[2px_2px_0px_0px_rgba(13,28,47,1)] font-bold">Vite</span>
+          <span class="inline-block bg-secondary-container text-on-secondary-container text-label-sm px-4 py-2 rounded-full border-[2px] border-on-surface sticker-rotate-3 shadow-[2px_2px_0px_0px_rgba(13,28,47,1)] font-bold">Vercel</span>
           <a href="https://medfield.in" target="_blank" rel="noopener noreferrer" class="inline-block bg-primary text-on-primary text-label-sm px-4 py-2 rounded-full border-[2px] border-on-surface sticker-rotate-1 shadow-[2px_2px_0px_0px_rgba(13,28,47,1)] font-bold hover:scale-110 transition-transform">Live 🔗</a>
         </div>
       </article>
@@ -195,10 +200,31 @@
           <span class="inline-block bg-inverse-primary text-on-primary-fixed text-label-sm px-4 py-2 rounded-full border-[2px] border-on-surface sticker-rotate-3 shadow-[2px_2px_0px_0px_rgba(13,28,47,1)] font-bold">Next.js</span>
           <span class="inline-block bg-surface-container-highest text-on-surface-variant text-label-sm px-4 py-2 rounded-full border-[2px] border-on-surface sticker-rotate-2 shadow-[2px_2px_0px_0px_rgba(13,28,47,1)] font-bold">React</span>
           <span class="inline-block bg-secondary-fixed-dim text-on-secondary-fixed-variant text-label-sm px-4 py-2 rounded-full border-[2px] border-on-surface sticker-rotate-1 shadow-[2px_2px_0px_0px_rgba(13,28,47,1)] font-bold">TypeScript</span>
+          <span class="inline-block bg-tertiary-fixed text-on-tertiary-fixed text-label-sm px-4 py-2 rounded-full border-[2px] border-on-surface sticker-rotate-2 shadow-[2px_2px_0px_0px_rgba(13,28,47,1)] font-bold">Google Antigravity IDE</span>
           <a href="https://buildingitlive.com" target="_blank" rel="noopener noreferrer" class="inline-block bg-primary text-on-primary text-label-sm px-4 py-2 rounded-full border-[2px] border-on-surface sticker-rotate-2 shadow-[2px_2px_0px_0px_rgba(13,28,47,1)] font-bold hover:scale-110 transition-transform">Live 🔗</a>
         </div>
       </article>
     </div>
+
+    <!-- Freelance Call to Action -->
+    <div class="mt-16 bg-surface-container-highest rounded-3xl p-8 md:p-12 border-[3px] border-on-surface shadow-[8px_8px_0px_0px_rgba(13,28,47,1)] flex flex-col md:flex-row items-center justify-between gap-6 bouncy-hover relative overflow-hidden">
+      <!-- Decorative Background Element -->
+      <div class="absolute -top-12 -right-12 w-48 h-48 bg-tertiary-fixed rounded-full opacity-30 blur-3xl pointer-events-none"></div>
+      
+      <div class="relative z-10 text-center md:text-left">
+        <h3 class="text-headline-sm font-extrabold text-on-surface mb-2">Want to see more?</h3>
+        <p class="text-body-lg text-on-surface-variant font-bold">For other projects and information about my freelance journey, check out my business website.</p>
+      </div>
+      
+      <a href="https://buildingitlive.com" target="_blank" rel="noopener noreferrer" class="relative z-10 shrink-0 bg-primary text-on-primary font-extrabold text-label-lg px-8 py-4 rounded-full border-[3px] border-on-surface shadow-[4px_4px_0px_0px_rgba(13,28,47,1)] hover:-translate-y-1 hover:shadow-[6px_6px_0px_0px_rgba(13,28,47,1)] active:translate-y-1 active:shadow-[2px_2px_0px_0px_rgba(13,28,47,1)] transition-all flex items-center gap-2">
+        Visit Building It Live <span class="material-symbols-outlined">open_in_new</span>
+      </a>
+    </div>
+
+  
+    
+  
+  
   </main>
 
   <!-- ═══════════════════════════════════════════
@@ -218,9 +244,10 @@
 
     <!-- Links -->
     <nav class="flex gap-6">
-      <a href="https://github.com/justkalesh" target="_blank" rel="noopener noreferrer" class="text-on-surface-variant text-label-sm hover:text-primary hover:scale-105 transition-transform font-bold">GitHub</a>
-      <a href="https://www.linkedin.com/in/justkalesh/" target="_blank" rel="noopener noreferrer" class="text-on-surface-variant text-label-sm hover:text-primary hover:scale-105 transition-transform font-bold">LinkedIn</a>
-      <a href="https://leetcode.com/u/justkalesh/" target="_blank" rel="noopener noreferrer" class="text-on-surface-variant text-label-sm hover:text-primary hover:scale-105 transition-transform font-bold">LeetCode</a>
+      <a href="https://github.com/justkalesh" target="_blank" rel="noopener noreferrer" class="text-label-sm text-on-surface-variant hover:text-primary hover:scale-105 transition-transform active:scale-95 font-bold">GitHub</a>
+      <a href="https://www.linkedin.com/in/justkalesh/" target="_blank" rel="noopener noreferrer" class="text-label-sm text-on-surface-variant hover:text-primary hover:scale-105 transition-transform active:scale-95 font-bold">LinkedIn</a>
+      <a href="https://x.com/yours_kalash" target="_blank" rel="noopener noreferrer" class="text-label-sm text-on-surface-variant hover:text-primary hover:scale-105 transition-transform active:scale-95 font-bold">X</a>
+      <a href="https://leetcode.com/u/justkalesh/" target="_blank" rel="noopener noreferrer" class="text-label-sm text-on-surface-variant hover:text-primary hover:scale-105 transition-transform active:scale-95 font-bold">LeetCode</a>
     </nav>
   </footer>
 

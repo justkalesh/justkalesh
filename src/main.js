@@ -4,10 +4,22 @@
  */
 
 import './style.css';
+import { navigate } from './router.js';
 import { initNavPill } from './nav.js';
 
 // ── Sliding Nav Pill ───────────────────────────────
 initNavPill();
+
+export function initStickers() {
+  const stickers = document.querySelectorAll('.sticker-card, .pill-badge, .pill-sticker');
+  stickers.forEach(sticker => {
+      if(!sticker.className.includes('rotate-')) {
+           const randomRot = (Math.random() * 4 - 2).toFixed(1);
+           sticker.style.transform = `rotate(${randomRot}deg)`;
+      }
+  });
+}
+initStickers();
 
 // ── Mobile Menu Toggle ──────────────────────────
 const mobileMenuBtn = document.getElementById('mobile-menu-btn');
@@ -28,12 +40,21 @@ if (mobileMenuClose && mobileMenu) {
   });
 }
 
-// Close mobile menu when clicking a link
+// Close mobile menu and navigate
 if (mobileMenu) {
   mobileMenu.querySelectorAll('a').forEach((link) => {
-    link.addEventListener('click', () => {
+    link.addEventListener('click', (e) => {
+      const href = link.getAttribute('href');
+      
       mobileMenu.classList.remove('active');
       document.body.style.overflow = '';
+
+      if (href && href !== '#' && !href.startsWith('javascript:')) {
+        e.preventDefault();
+        setTimeout(() => {
+          navigate(href);
+        }, 300);
+      }
     });
   });
 }
