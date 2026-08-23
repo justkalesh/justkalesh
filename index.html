@@ -7,6 +7,11 @@
   <title>Kalash | Portfolio</title>
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <link rel="stylesheet" href="/src/style.css" />
+  <style>
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+  </style>
 </head>
 <body class="bg-background-cream bg-dot-pattern min-h-screen text-on-surface font-[var(--font-body)] overflow-x-hidden relative flex flex-col">
 
@@ -21,13 +26,16 @@
     </a>
 
     <!-- Desktop Navigation -->
-    <div class="hidden md:flex gap-4 items-center" id="desktop-nav">
-      <a href="index.html" class="text-primary font-extrabold text-label-lg px-4 py-2 rounded-full border-[3px] border-on-surface bg-surface-container shadow-[4px_4px_0px_0px_rgba(13,28,47,1)]">Home</a>
-      <a href="#" class="text-on-surface-variant font-medium nav-link-hover text-label-lg hover:text-primary transition-colors">About Me</a>
-      <a href="#" class="text-on-surface-variant font-medium nav-link-hover text-label-lg hover:text-primary transition-colors">Resume</a>
-      <a href="projects.html" class="text-on-surface-variant font-medium nav-link-hover text-label-lg hover:text-primary transition-colors">Projects</a>
-      <a href="#" class="text-on-surface-variant font-medium nav-link-hover text-label-lg hover:text-primary transition-colors">Certification</a>
-      <a href="#" class="text-on-surface-variant font-medium nav-link-hover text-label-lg hover:text-primary transition-colors">More</a>
+    <div class="hidden md:flex gap-4 items-center relative" id="desktop-nav">
+      <!-- Sliding Pill -->
+      <div id="nav-pill" class="absolute pointer-events-none rounded-full border-[3px] border-on-surface bg-surface-container shadow-[4px_4px_0px_0px_rgba(13,28,47,1)] transition-all duration-300 ease-[cubic-bezier(0.25,1,0.5,1)] z-0" style="opacity: 0; animation: fadeIn 0.3s forwards 0.1s;"></div>
+
+      <a href="index.html" class="nav-item active text-primary font-extrabold text-label-lg px-4 py-2 relative z-10 transition-colors">Home</a>
+      <a href="#" class="nav-item text-on-surface-variant font-medium text-label-lg px-4 py-2 relative z-10 transition-colors">About Me</a>
+      <a href="#" class="nav-item text-on-surface-variant font-medium text-label-lg px-4 py-2 relative z-10 transition-colors">Resume</a>
+      <a href="projects.html" class="nav-item text-on-surface-variant font-medium text-label-lg px-4 py-2 relative z-10 transition-colors">Projects</a>
+      <a href="#" class="nav-item text-on-surface-variant font-medium text-label-lg px-4 py-2 relative z-10 transition-colors">Certification</a>
+      <a href="#" class="nav-item text-on-surface-variant font-medium text-label-lg px-4 py-2 relative z-10 transition-colors">More</a>
     </div>
 
     <!-- CTA Button -->

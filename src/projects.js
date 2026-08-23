@@ -4,6 +4,10 @@
  */
 
 import './style.css';
+import { initNavPill } from './nav.js';
+
+// ── Sliding Nav Pill ───────────────────────────────
+initNavPill();
 
 // ── Mobile Menu Toggle ──────────────────────────
 const mobileMenuBtn = document.getElementById('mobile-menu-btn');
