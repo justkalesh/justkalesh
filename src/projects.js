@@ -1,0 +1,77 @@
+/**
+ * projects.js — Projects page JavaScript
+ * Handles: Mobile menu toggle
+ */
+
+import './style.css';
+
+// ── Mobile Menu Toggle ──────────────────────────
+const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+const mobileMenuClose = document.getElementById('mobile-menu-close');
+const mobileMenu = document.getElementById('mobile-menu');
+
+if (mobileMenuBtn && mobileMenu) {
+  mobileMenuBtn.addEventListener('click', () => {
+    mobileMenu.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  });
+}
+
+if (mobileMenuClose && mobileMenu) {
+  mobileMenuClose.addEventListener('click', () => {
+    mobileMenu.classList.remove('active');
+    document.body.style.overflow = '';
+  });
+}
+
+// Close mobile menu when clicking a link
+if (mobileMenu) {
+  mobileMenu.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', () => {
+      mobileMenu.classList.remove('active');
+      document.body.style.overflow = '';
+    });
+  });
+}
+
+// ── Custom Cursor (Desktop only) ──────────
+const cursor = document.getElementById('custom-cursor');
+
+if (cursor) {
+  let mouseX = window.innerWidth / 2;
+  let mouseY = window.innerHeight / 2;
+  let prevMouseX = mouseX;
+  let prevMouseY = mouseY;
+  let currentAngle = 0;
+  let targetAngle = 0;
+
+  document.addEventListener('mousemove', (e) => {
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+  });
+
+  function animate() {
+    const velX = mouseX - prevMouseX;
+    const velY = mouseY - prevMouseY;
+
+    // Only calculate new angle if moving significantly to avoid micro-jitter
+    if (Math.hypot(velX, velY) > 2) {
+      targetAngle = Math.atan2(velY, velX) * (180 / Math.PI) + 90;
+    }
+
+    // Smooth angle interpolation (handles 360 to 0 wrap around correctly)
+    let diff = targetAngle - currentAngle;
+    diff = ((diff + 180) % 360 + 360) % 360 - 180;
+    currentAngle += diff * 0.15; // smooth rotation
+
+    // Instant position tracking for zero lag, pivoting perfectly around the finger tip
+    cursor.style.transform = `translate(${mouseX - 17.33}px, ${mouseY - 2.66}px) rotate(${currentAngle}deg)`;
+
+    prevMouseX = mouseX;
+    prevMouseY = mouseY;
+
+    requestAnimationFrame(animate);
+  }
+
+  animate();
+}
