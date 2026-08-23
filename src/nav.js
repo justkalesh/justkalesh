@@ -11,6 +11,8 @@ export function syncNavWithUrl(pathname) {
   const isAbout = pathname.includes('about');
   const isResume = pathname.includes('resume');
   
+  
+  // Update desktop nav items
   navItemsList.forEach(item => {
     item.classList.remove('active', 'active-clicked');
     const href = item.getAttribute('href');
@@ -24,6 +26,32 @@ export function syncNavWithUrl(pathname) {
       item.classList.add('active');
     }
   });
+
+  // Update brand text dynamically
+  const brandEl = document.querySelector('.tracking-tight');
+  if (brandEl) {
+     if (isProjects) brandEl.textContent = 'Projects';
+     else if (isAbout) brandEl.textContent = 'About Me';
+     else if (isResume) brandEl.textContent = 'Resume';
+     else brandEl.textContent = 'Home';
+  }
+
+  // Update mobile nav items pill UI
+  const mobileNavItems = document.querySelectorAll('.mobile-nav-item');
+  mobileNavItems.forEach(item => {
+    item.className = 'mobile-nav-item text-headline-sm text-on-surface-variant font-medium transition-colors text-center';
+    const href = item.getAttribute('href');
+    let isActive = false;
+    if (isProjects && href === 'projects.html') isActive = true;
+    else if (isAbout && href === 'about.html') isActive = true;
+    else if (isResume && href === 'resume.html') isActive = true;
+    else if (!isProjects && !isAbout && !isResume && href === 'index.html') isActive = true;
+
+    if (isActive) {
+      item.className = 'mobile-nav-item text-headline-sm text-primary font-extrabold px-8 py-3 rounded-full border-[3px] border-on-surface bg-surface-container shadow-[4px_4px_0px_0px_rgba(13,28,47,1)] transition-colors text-center';
+    }
+  });
+
 
   const currentActive = document.querySelector('.nav-item.active') || navItemsList[0];
   if (movePillCallback && updateStylesCallback) {
