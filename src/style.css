@@ -275,7 +275,10 @@ body {
 
 /* ── Custom Cursor Support ───────────────────── */
 @media (min-width: 768px) {
-  *, *::before, *::after {
+  html, body,
+  *, *::before, *::after,
+  a, button, input, select, textarea, label,
+  [role="button"], [class*="cursor-pointer"] {
     cursor: none !important;
   }
 }

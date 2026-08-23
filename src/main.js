@@ -38,16 +38,26 @@ if (mobileMenu) {
 const cursor = document.getElementById('custom-cursor');
 
 if (cursor) {
-  let mouseX = window.innerWidth / 2;
-  let mouseY = window.innerHeight / 2;
+  let mouseX = -100;
+  let mouseY = -100;
   let prevMouseX = mouseX;
   let prevMouseY = mouseY;
   let currentAngle = 0;
   let targetAngle = 0;
+  let hasMovedOnce = false;
+
+  // Hide until first mouse movement
+  cursor.style.opacity = '0';
 
   document.addEventListener('mousemove', (e) => {
     mouseX = e.clientX;
     mouseY = e.clientY;
+    if (!hasMovedOnce) {
+      hasMovedOnce = true;
+      prevMouseX = mouseX;
+      prevMouseY = mouseY;
+      cursor.style.opacity = '1';
+    }
   });
 
   function animate() {
