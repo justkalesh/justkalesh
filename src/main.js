@@ -50,6 +50,12 @@ if (cursor) {
   cursor.style.opacity = '0';
 
   document.addEventListener('mousemove', (e) => {
+    if (window.innerWidth < 768) {
+      cursor.style.display = 'none';
+      return;
+    }
+    cursor.style.display = 'block';
+    
     mouseX = e.clientX;
     mouseY = e.clientY;
     if (!hasMovedOnce) {
@@ -84,4 +90,22 @@ if (cursor) {
   }
 
   animate();
+}
+
+// ── Scroll to Top Button ──────────
+const scrollToTopBtn = document.getElementById('scroll-to-top');
+if (scrollToTopBtn) {
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+      scrollToTopBtn.classList.remove('opacity-0', 'pointer-events-none');
+      scrollToTopBtn.classList.add('opacity-100', 'pointer-events-auto');
+    } else {
+      scrollToTopBtn.classList.add('opacity-0', 'pointer-events-none');
+      scrollToTopBtn.classList.remove('opacity-100', 'pointer-events-auto');
+    }
+  });
+
+  scrollToTopBtn.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
 }

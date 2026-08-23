@@ -21,9 +21,13 @@
     </a>
 
     <!-- Desktop Nav -->
-    <nav class="hidden md:flex gap-8 items-center">
+    <nav class="hidden md:flex gap-4 items-center">
       <a href="index.html" class="text-on-surface-variant font-medium nav-link-hover text-label-lg hover:text-primary transition-colors">Home</a>
+      <a href="#" class="text-on-surface-variant font-medium nav-link-hover text-label-lg hover:text-primary transition-colors">About Me</a>
+      <a href="#" class="text-on-surface-variant font-medium nav-link-hover text-label-lg hover:text-primary transition-colors">Resume</a>
       <a href="projects.html" class="text-primary font-extrabold text-label-lg px-4 py-2 rounded-full border-[3px] border-on-surface bg-surface-container shadow-[4px_4px_0px_0px_rgba(13,28,47,1)]">Projects</a>
+      <a href="#" class="text-on-surface-variant font-medium nav-link-hover text-label-lg hover:text-primary transition-colors">Certification</a>
+      <a href="#" class="text-on-surface-variant font-medium nav-link-hover text-label-lg hover:text-primary transition-colors">More</a>
     </nav>
 
     <!-- CTA -->
@@ -45,7 +49,11 @@
       <span class="material-symbols-outlined text-3xl">close</span>
     </button>
     <a href="index.html" class="text-headline-md text-on-surface-variant hover:text-primary transition-colors font-bold">Home</a>
+    <a href="#" class="text-headline-md text-on-surface-variant hover:text-primary transition-colors font-bold">About Me</a>
+    <a href="#" class="text-headline-md text-on-surface-variant hover:text-primary transition-colors font-bold">Resume</a>
     <a href="projects.html" class="text-headline-md text-primary font-extrabold">Projects</a>
+    <a href="#" class="text-headline-md text-on-surface-variant hover:text-primary transition-colors font-bold">Certification</a>
+    <a href="#" class="text-headline-md text-on-surface-variant hover:text-primary transition-colors font-bold">More</a>
     <button class="px-8 py-3 rounded-full border-[3px] border-on-surface bg-primary-container text-on-primary-container text-label-lg font-extrabold shadow-[4px_4px_0px_0px_rgba(13,28,47,1)] mt-4 cursor-pointer">
       Hire Me
     </button>
@@ -58,7 +66,7 @@
 
     <!-- Title Area -->
     <div class="mb-16 text-center">
-      <h1 class="text-display-lg text-on-background mb-4 font-extrabold">My Playground</h1>
+      <h1 class="text-5xl md:text-[64px] leading-tight text-on-background mb-4 font-extrabold">My Playground</h1>
       <p class="text-body-lg text-on-surface-variant max-w-2xl mx-auto">A collection of things I've built, broken, and fixed again.</p>
     </div>
 
@@ -180,6 +188,15 @@
       <a href="https://leetcode.com/u/justkalesh/" target="_blank" rel="noopener noreferrer" class="text-on-surface-variant text-label-sm hover:text-primary hover:scale-105 transition-transform font-bold">LeetCode</a>
     </nav>
   </footer>
+
+  <!-- ═══════════════════════════════════════════
+       SCROLL TO TOP BUTTON
+       ═══════════════════════════════════════════ -->
+  <button id="scroll-to-top" class="fixed bottom-4 right-4 md:bottom-8 md:right-8 w-12 h-12 md:w-14 md:h-14 rounded-full border-[3px] border-on-surface bg-primary text-on-primary flex items-center justify-center shadow-[4px_4px_0px_0px_rgba(13,28,47,1)] opacity-0 pointer-events-none transition-all duration-300 hover:scale-110 active:scale-95 hover:shadow-[2px_2px_0px_0px_rgba(13,28,47,1)] active:shadow-[0px_0px_0px_0px_rgba(13,28,47,1)]" style="z-index: 9990;" aria-label="Scroll to top">
+    <svg class="w-5 h-5 md:w-6 md:h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 19V5M5 12l7-7 7 7"/>
+    </svg>
+  </button>
 
   <!-- ═══════════════════════════════════════════
        CUSTOM CURSOR
