@@ -1,69 +1,56 @@
-# justkalesh — Portfolio Website
+<h1 align="center">Hi, I'm Kalash! 👋</h1>
 
-Kalash's personal portfolio website for college — a bold, tactile **Neo-Pop Claydesk** showcase of projects and skills.
+<p align="center">
+  <strong>B.Tech CSE Student & Full-Stack Developer</strong><br>
+  <em>Building playful, interactive, and robust digital experiences.</em>
+</p>
 
-## Tech Stack
+<p align="center">
+  <a href="https://justkalesh.github.io/justkalesh/">Website</a> •
+  <a href="https://www.linkedin.com/in/justkalesh/">LinkedIn</a> •
+  <a href="https://x.com/yours_kalash">X (Twitter)</a> •
+  <a href="https://leetcode.com/u/justkalesh/">LeetCode</a>
+</p>
 
-- **Vite** — Fast build tool & dev server
-- **TailwindCSS v4** — Utility-first CSS (via `@tailwindcss/vite` plugin)
-- **Vanilla JS** — No framework, just clean JavaScript
-- **Google Fonts** — Nunito Sans (all typography)
-- **Material Symbols** — Icon set
+<br>
 
-## Getting Started
+## 🚀 About Me
+- 🎓 First-year B.Tech CSE (Core) student at **Lovely Professional University (LPU)** (2025-2029)
+- 💻 Freelance Full-Stack Developer at **Building It Live**
+- ❤️ I code with serious intent and a playful heart. I love turning complex problems into scalable, user-friendly solutions.
 
-```bash
-# Install dependencies
-npm install
+## 🛠️ Tech Arsenal
 
-# Start dev server (http://localhost:5173)
-npm run dev
+**Languages:**  
+![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![C](https://img.shields.io/badge/-C-A8B9CC?style=flat-square&logo=c&logoColor=white)
+![C++](https://img.shields.io/badge/-C++-00599C?style=flat-square&logo=c%2B%2B&logoColor=white)
 
-# Build for production (outputs to dist/)
-npm run build
+**Technologies & Frameworks:**  
+![React](https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react&logoColor=black)
+![Node.js](https://img.shields.io/badge/-Node.js-339933?style=flat-square&logo=node.js&logoColor=white)
+![Flutter](https://img.shields.io/badge/-Flutter-02569B?style=flat-square&logo=flutter&logoColor=white)
+![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/-CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
 
-# Preview production build locally
-npm run preview
-```
+**Databases & Tools:**  
+![Supabase](https://img.shields.io/badge/-Supabase-3ECF8E?style=flat-square&logo=supabase&logoColor=white)
+![MongoDB](https://img.shields.io/badge/-MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
+![Git](https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github&logoColor=white)
+![Antigravity](https://img.shields.io/badge/-Antigravity_(Gen_AI)-4B0082?style=flat-square&logo=google&logoColor=white)
+![Stitch](https://img.shields.io/badge/-Stitch-000000?style=flat-square)
 
-## Deployment
+## 🏗️ What I'm Building
+- **Building It Live:** Freelance projects focused on performant, top-tier user experiences.
+- **Medfield:** Built with React, Supabase, Gemini API, Vite.
+- **Food-Hunt:** Built with React 19, TypeScript, Vite, Supabase, Firebase Cloud Messaging.
 
-This site is designed for **GitHub Pages** (static hosting).
+---
 
-```bash
-# Build and deploy the dist/ folder to GitHub Pages
-npm run build
-# Then push the dist/ folder to the gh-pages branch
-```
+### 🎨 About this Repository
+This repository (`justkalesh/justkalesh`) serves double-duty as my **GitHub Profile** and the source code for my **Portfolio Website**.
 
-## Project Structure
-
-```
-justkalesh/
-├── index.html          # Home page
-├── projects.html       # Projects page
-├── src/
-│   ├── style.css       # Design system + Tailwind imports
-│   ├── main.js         # Home page JS (cat cursor, mobile menu)
-│   └── projects.js     # Projects page JS (mobile menu)
-├── public/             # Static assets (favicon, etc.)
-├── vite.config.js      # Vite + Tailwind config
-├── CONTEXT.md          # Project context & decisions
-├── DESIGN.md           # Design system reference
-└── README.md           # This file
-```
-
-## Pages
-
-| Page | Status | Description |
-|------|--------|-------------|
-| Home (`index.html`) | ✅ Done | Neo-pop hero, bento grid, "Available for work" chip |
-| Projects (`projects.html`) | ✅ Done | 3 clay project cards with colored hard shadows |
-| About Me | 🔜 Planned | Coming soon |
-| Resume | 🔜 Planned | Coming soon |
-| Certifications | 🔜 Planned | Coming soon |
-| Contact | 🔜 Planned | Coming soon |
-
-## Design System
-
-See [DESIGN.md](DESIGN.md) for the full "Neo-Pop Claydesk" design system reference.
+The portfolio is built with **Vite, Vanilla JS, and TailwindCSS v4** using a custom "Neo-Pop Claydesk" design system. 
+- 🔗 **View the live site:** [justkalesh.github.io/justkalesh](https://justkalesh.github.io/justkalesh/)
