@@ -107,8 +107,18 @@ export function initNavPill() {
     });
   };
 
-  // Setup initial active state based on URL
+  // Setup initial active state based on URL, and recalculate after fonts load to prevent layout bugs
   syncNavWithUrl(window.location.pathname);
+  
+  // Re-sync after layout settles to ensure bounding rects are correct
+  if (document.fonts && document.fonts.ready) {
+    document.fonts.ready.then(() => {
+      syncNavWithUrl(window.location.pathname);
+    });
+  } else {
+    window.addEventListener('load', () => syncNavWithUrl(window.location.pathname));
+    setTimeout(() => syncNavWithUrl(window.location.pathname), 150);
+  }
 
   // Resize handler
   window.addEventListener('resize', () => {
