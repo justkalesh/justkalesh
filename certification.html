@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Kalash — B.Tech CSE Student & Full-Stack Developer building playful, interactive digital experiences with modern web technologies." />
-  <title>Kalash | Portfolio</title>
+  <meta name="description" content="Kalash's certifications — Courses, achievements, and professional credentials in software development and computer science." />
+  <title>Kalash | Certifications</title>
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <link rel="stylesheet" href="/src/style.css" />
   <style>
@@ -30,11 +30,11 @@
       <!-- Sliding Pill -->
       <div id="nav-pill" class="absolute pointer-events-none rounded-full border-[3px] border-on-surface bg-surface-container shadow-[4px_4px_0px_0px_rgba(13,28,47,1)] transition-all duration-300 ease-[cubic-bezier(0.25,1,0.5,1)] z-0" style="opacity: 0; animation: fadeIn 0.3s forwards 0.1s;"></div>
 
-      <a href="index.html" class="nav-item active text-primary font-extrabold text-label-lg px-4 py-2 relative z-10 transition-colors">Home</a>
+      <a href="index.html" class="nav-item text-on-surface-variant font-medium text-label-lg px-4 py-2 relative z-10 transition-colors">Home</a>
       <a href="about.html" class="nav-item text-on-surface-variant font-medium text-label-lg px-4 py-2 relative z-10 transition-colors">About Me</a>
       <a href="resume.html" class="nav-item text-on-surface-variant font-medium text-label-lg px-4 py-2 relative z-10 transition-colors">Resume</a>
       <a href="projects.html" class="nav-item text-on-surface-variant font-medium text-label-lg px-4 py-2 relative z-10 transition-colors">Projects</a>
-      <a href="certification.html" class="nav-item text-on-surface-variant font-medium text-label-lg px-4 py-2 relative z-10 transition-colors">Certification</a>
+      <a href="certification.html" class="nav-item active text-primary font-extrabold text-label-lg px-4 py-2 relative z-10 transition-colors">Certification</a>
       <a href="more.html" class="nav-item text-on-surface-variant font-medium text-label-lg px-4 py-2 relative z-10 transition-colors">More</a>
     </div>
 
@@ -60,7 +60,7 @@
     <a href="about.html" class="mobile-nav-item text-headline-sm text-on-surface-variant font-medium transition-colors">About Me</a>
     <a href="resume.html" class="mobile-nav-item text-headline-sm text-on-surface-variant font-medium transition-colors">Resume</a>
     <a href="projects.html" class="mobile-nav-item text-headline-sm text-on-surface-variant font-medium transition-colors">Projects</a>
-    <a href="certification.html" class="mobile-nav-item text-headline-sm text-on-surface-variant font-medium transition-colors">Certification</a>
+    <a href="certification.html" class="mobile-nav-item text-headline-sm text-primary font-extrabold transition-colors">Certification</a>
     <a href="more.html" class="mobile-nav-item text-headline-sm text-on-surface-variant font-medium transition-colors">More</a>
     <a href="more.html#contact" class="px-8 py-3 rounded-full border-[3px] border-on-surface bg-primary text-on-primary text-label-lg font-extrabold neo-btn-hover shadow-[4px_4px_0px_0px_rgba(13,28,47,1)] mt-4 cursor-pointer active:translate-y-[2px] active:shadow-[2px_2px_0px_0px_rgba(13,28,47,1)] transition-all no-underline" style="--hover-shadow-color: rgba(13,28,47,1);">
       Hire Me
@@ -68,96 +68,110 @@
   </div>
 
   <!-- ═══════════════════════════════════════════
-       HERO SECTION
+       MAIN CONTENT
        ═══════════════════════════════════════════ -->
-  <main class="relative max-w-7xl mx-auto px-[16px] md:px-[48px] pt-[96px] pb-[96px] flex flex-col md:flex-row items-center justify-between gap-12 flex-grow">
+  <main class="relative flex-grow w-full max-w-6xl mx-auto px-4 py-12 md:px-[24px] md:py-[96px] flex flex-col gap-8 md:gap-[96px]">
 
-    <!-- Text Content -->
-    <div class="w-full md:w-1/2 flex flex-col items-start gap-6 relative z-10">
-
-      <!-- Available Sticker Chip -->
-      <div class="inline-block px-4 py-2 bg-surface-container border-2 border-on-surface rounded-full transform -rotate-3 text-label-sm font-bold shadow-[4px_4px_0px_0px_rgba(13,28,47,1)] mb-4">
-        Available for work
-      </div>
-
-      <!-- Headline -->
-      <h1 class="text-display-lg text-primary-container leading-tight">
-        Hi, I'm Kalash! <span class="inline-block animate-bounce">👋</span>
+    <!-- Hero Section -->
+    <section class="text-center relative">
+      <h1 class="text-4xl md:text-[80px] font-black text-primary mb-6 drop-shadow-[4px_4px_0px_rgba(13,28,47,1)] relative inline-block z-10 leading-tight">
+        Certifications
+        <span class="absolute -top-6 -right-10 text-4xl rotate-12 bg-secondary-fixed text-on-secondary-fixed px-3 py-1 rounded-full border-[2px] border-on-surface shadow-[4px_4px_0px_0px_rgba(13,28,47,1)] hover:scale-110 active:scale-95 transition-transform hidden md:block">🏆</span>
       </h1>
-
-      <!-- Subtitle -->
-      <p class="text-headline-md text-on-surface max-w-lg">
-        B.Tech CSE Student &amp; Full-Stack Developer.
+      <p class="text-body-lg text-on-surface-variant max-w-2xl mx-auto">
+        Courses, achievements, and professional credentials I've earned along the way.
       </p>
+    </section>
 
-      <!-- Body -->
-      <p class="text-body-lg text-on-surface-variant max-w-md">
-        I build playful, interactive, and robust digital experiences. Let's create something awesome together.
-      </p>
+    <!-- Certifications Grid -->
+    <section class="grid grid-cols-1 md:grid-cols-2 gap-8">
 
-      <!-- CTAs -->
-      <div class="flex flex-col sm:flex-row gap-4 mt-8 w-full sm:w-auto">
-        <a href="projects.html" class="neo-btn-hover neo-shadow-primary w-full sm:w-auto px-8 py-4 bg-primary-container text-on-primary border-[3px] border-on-surface rounded-full text-label-lg font-extrabold flex items-center justify-center gap-2 text-center" style="--hover-shadow-color: var(--color-primary);">
-          View My Projects 🚀
-        </a>
-        <button class="neo-btn-hover neo-shadow-secondary w-full sm:w-auto px-8 py-4 bg-secondary-container text-on-secondary-container border-[3px] border-on-surface rounded-full text-label-lg font-extrabold flex items-center justify-center gap-2 cursor-pointer" style="--hover-shadow-color: var(--color-secondary);">
-          Download Resume 📄
-        </button>
-      </div>
-    </div>
-
-    <!-- Visual / Bento Grid Area -->
-    <div class="w-full md:w-1/2 relative min-h-[500px] flex items-center justify-center">
-
-      <!-- Background container (tilted) -->
-      <div class="absolute inset-0 bg-surface-container border-[3px] border-on-surface rounded-3xl neo-shadow-neutral transform rotate-2 z-0"></div>
-
-      <!-- Bento Grid -->
-      <div class="relative z-10 grid grid-cols-2 gap-4 p-6 w-full h-full">
-
-        <!-- Bento 1: Polaroid Image Placeholder -->
-        <div class="col-span-2 md:col-span-1 row-span-2 bg-[#FDFBF7] border-[3px] border-on-surface p-3 pb-12 flex flex-col items-center justify-center neo-shadow-neutral transform -rotate-2 hover:rotate-0 hover:scale-105 transition-all relative">
-          <div class="absolute -top-3 left-1/2 -translate-x-1/2 w-16 h-6 bg-[#ffdad8] border-[2px] border-on-surface transform rotate-[-4deg] z-10 shadow-sm"></div>
-          <div class="w-full aspect-square bg-surface-container-high border-[3px] border-on-surface flex items-center justify-center overflow-hidden relative">
-            <video autoplay loop muted playsinline class="w-full h-full object-cover absolute inset-0">
-              <source src="/dev_vid.mp4" type="video/mp4" />
-            </video>
+      <!-- Certificate 1 -->
+      <div class="bg-surface-container-high rounded-3xl p-6 md:p-8 border-[3px] border-on-surface shadow-[8px_8px_0px_0px_rgba(13,28,47,1)] bouncy-hover relative overflow-hidden flex flex-col gap-4">
+        <div class="absolute -top-4 -right-4 w-24 h-24 bg-primary-fixed rounded-full opacity-40 blur-2xl pointer-events-none"></div>
+        <div class="flex items-center gap-3">
+          <div class="w-12 h-12 bg-primary-fixed rounded-xl border-[2px] border-on-surface shadow-[3px_3px_0px_0px_rgba(13,28,47,1)] flex items-center justify-center shrink-0">
+            <span class="material-symbols-outlined text-2xl text-primary" style="font-variation-settings: 'FILL' 1;">verified</span>
+          </div>
+          <div>
+            <h3 class="text-headline-sm font-extrabold text-on-surface leading-tight">Python for Everybody</h3>
+            <p class="text-label-sm text-on-surface-variant font-medium">University of Michigan · Coursera</p>
           </div>
         </div>
-
-        <!-- Bento 2: GitHub CTA -->
-        <a href="https://github.com/justkalesh" target="_blank" rel="noopener noreferrer" class="col-span-1 bg-tertiary-container border-[3px] border-on-surface rounded-2xl p-4 flex flex-col gap-2 items-center justify-center neo-shadow-neutral transform rotate-3 hover:scale-105 hover:-rotate-1 transition-transform group cursor-pointer">
-          <svg class="w-10 h-10 fill-on-tertiary-container group-hover:scale-110 transition-transform" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-          <span class="text-headline-md text-on-tertiary-container font-extrabold group-hover:underline hidden md:block">GitHub</span>
-        </a>
-
-        <!-- Bento 3: LinkedIn CTA -->
-        <a href="https://www.linkedin.com/in/justkalesh/" target="_blank" rel="noopener noreferrer" class="col-span-1 bg-secondary border-[3px] border-on-surface rounded-2xl p-4 flex flex-col gap-2 items-center justify-center neo-shadow-neutral transform -rotate-2 hover:scale-105 hover:rotate-1 transition-transform group cursor-pointer">
-          <svg class="w-10 h-10 fill-on-secondary group-hover:scale-110 transition-transform" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-          <span class="text-headline-md text-on-secondary font-extrabold group-hover:underline hidden md:block">LinkedIn</span>
-        </a>
-
-        <!-- Bento 4: Always Learning Bar -->
-        <div class="col-span-2 bg-primary-fixed border-[3px] border-on-surface rounded-2xl p-4 flex items-center justify-between neo-shadow-neutral mt-2">
-          
-          <!-- Desktop View -->
-          <div class="hidden md:flex items-center justify-center w-full items-center justify-between">
-            <span class="text-body-lg text-on-primary-fixed font-bold leading-tight">B.Tech CSE '29 @ LPU</span>
-            <span class="material-symbols-outlined text-4xl text-primary shrink-0 ml-2">school</span>
-          </div>
-          
-          <!-- Mobile View -->
-          <div class="md:hidden flex items-center justify-center gap-2 w-full">
-            <span class="text-body-sm text-on-primary-fixed font-bold leading-tight">B.Tech CSE '29 @</span>
-            <img src="/lpu-logo.png" alt="LPU Logo" class="h-6 w-auto object-contain" />
-          </div>
+        <p class="text-body-md text-on-surface-variant">
+          Comprehensive Python programming specialization covering data structures, web scraping, databases, and data visualization.
+        </p>
+        <div class="flex items-center justify-between mt-auto pt-2">
+          <span class="text-label-sm text-on-surface-variant font-bold bg-surface-container-highest px-3 py-1 rounded-full border-[2px] border-on-surface shadow-[2px_2px_0px_0px_rgba(13,28,47,1)]">2024</span>
+          <a href="#" class="text-label-sm text-primary font-extrabold hover:underline hover:scale-105 transition-transform">View Certificate →</a>
         </div>
       </div>
-    </div>
-  
-    
-  
-  
+
+      <!-- Certificate 2 -->
+      <div class="bg-surface-container-high rounded-3xl p-6 md:p-8 border-[3px] border-on-surface shadow-[8px_8px_0px_0px_rgba(13,28,47,1)] bouncy-hover relative overflow-hidden flex flex-col gap-4">
+        <div class="absolute -top-4 -right-4 w-24 h-24 bg-secondary-fixed rounded-full opacity-40 blur-2xl pointer-events-none"></div>
+        <div class="flex items-center gap-3">
+          <div class="w-12 h-12 bg-secondary-fixed rounded-xl border-[2px] border-on-surface shadow-[3px_3px_0px_0px_rgba(13,28,47,1)] flex items-center justify-center shrink-0">
+            <span class="material-symbols-outlined text-2xl text-secondary" style="font-variation-settings: 'FILL' 1;">verified</span>
+          </div>
+          <div>
+            <h3 class="text-headline-sm font-extrabold text-on-surface leading-tight">Web Development Bootcamp</h3>
+            <p class="text-label-sm text-on-surface-variant font-medium">Udemy · Dr. Angela Yu</p>
+          </div>
+        </div>
+        <p class="text-body-md text-on-surface-variant">
+          Full-stack web development covering HTML, CSS, JavaScript, Node.js, React, MongoDB, and deployment best practices.
+        </p>
+        <div class="flex items-center justify-between mt-auto pt-2">
+          <span class="text-label-sm text-on-surface-variant font-bold bg-surface-container-highest px-3 py-1 rounded-full border-[2px] border-on-surface shadow-[2px_2px_0px_0px_rgba(13,28,47,1)]">2024</span>
+          <a href="#" class="text-label-sm text-secondary font-extrabold hover:underline hover:scale-105 transition-transform">View Certificate →</a>
+        </div>
+      </div>
+
+      <!-- Certificate 3 -->
+      <div class="bg-surface-container-high rounded-3xl p-6 md:p-8 border-[3px] border-on-surface shadow-[8px_8px_0px_0px_rgba(13,28,47,1)] bouncy-hover relative overflow-hidden flex flex-col gap-4">
+        <div class="absolute -top-4 -right-4 w-24 h-24 bg-tertiary-fixed rounded-full opacity-40 blur-2xl pointer-events-none"></div>
+        <div class="flex items-center gap-3">
+          <div class="w-12 h-12 bg-tertiary-fixed rounded-xl border-[2px] border-on-surface shadow-[3px_3px_0px_0px_rgba(13,28,47,1)] flex items-center justify-center shrink-0">
+            <span class="material-symbols-outlined text-2xl text-tertiary" style="font-variation-settings: 'FILL' 1;">verified</span>
+          </div>
+          <div>
+            <h3 class="text-headline-sm font-extrabold text-on-surface leading-tight">Data Structures & Algorithms</h3>
+            <p class="text-label-sm text-on-surface-variant font-medium">LeetCode · Self-paced</p>
+          </div>
+        </div>
+        <p class="text-body-md text-on-surface-variant">
+          Mastered core DSA concepts including arrays, linked lists, trees, graphs, dynamic programming, and sorting algorithms.
+        </p>
+        <div class="flex items-center justify-between mt-auto pt-2">
+          <span class="text-label-sm text-on-surface-variant font-bold bg-surface-container-highest px-3 py-1 rounded-full border-[2px] border-on-surface shadow-[2px_2px_0px_0px_rgba(13,28,47,1)]">2025</span>
+          <a href="#" class="text-label-sm text-tertiary font-extrabold hover:underline hover:scale-105 transition-transform">View Certificate →</a>
+        </div>
+      </div>
+
+      <!-- Certificate 4 -->
+      <div class="bg-surface-container-high rounded-3xl p-6 md:p-8 border-[3px] border-on-surface shadow-[8px_8px_0px_0px_rgba(13,28,47,1)] bouncy-hover relative overflow-hidden flex flex-col gap-4">
+        <div class="absolute -top-4 -right-4 w-24 h-24 bg-primary-fixed rounded-full opacity-40 blur-2xl pointer-events-none"></div>
+        <div class="flex items-center gap-3">
+          <div class="w-12 h-12 bg-primary-fixed rounded-xl border-[2px] border-on-surface shadow-[3px_3px_0px_0px_rgba(13,28,47,1)] flex items-center justify-center shrink-0">
+            <span class="material-symbols-outlined text-2xl text-primary" style="font-variation-settings: 'FILL' 1;">verified</span>
+          </div>
+          <div>
+            <h3 class="text-headline-sm font-extrabold text-on-surface leading-tight">SQL for Data Science</h3>
+            <p class="text-label-sm text-on-surface-variant font-medium">UC Davis · Coursera</p>
+          </div>
+        </div>
+        <p class="text-body-md text-on-surface-variant">
+          Database querying fundamentals including SELECT, JOIN, subqueries, aggregation functions, and database design principles.
+        </p>
+        <div class="flex items-center justify-between mt-auto pt-2">
+          <span class="text-label-sm text-on-surface-variant font-bold bg-surface-container-highest px-3 py-1 rounded-full border-[2px] border-on-surface shadow-[2px_2px_0px_0px_rgba(13,28,47,1)]">2024</span>
+          <a href="#" class="text-label-sm text-primary font-extrabold hover:underline hover:scale-105 transition-transform">View Certificate →</a>
+        </div>
+      </div>
+
+    </section>
+
   </main>
 
   <!-- ═══════════════════════════════════════════
@@ -171,7 +185,7 @@
     </div>
 
     <!-- Copyright -->
-    <div class="text-body-md text-on-surface-variant text-center md:text-left mb-4 md:mb-0">
+    <div class="text-body-md text-on-surface-variant text-center md:text-left">
       Made by <a href="https://buildingitlive.com" target="_blank" rel="noopener noreferrer" class="font-bold text-primary hover:underline hover:text-primary-container transition-colors">Building It Live.</a>
     </div>
 
@@ -207,4 +221,3 @@
   <script type="module" src="/src/main.js"></script>
 </body>
 </html>
-

@@ -12,6 +12,8 @@ export default defineConfig({
         projects: resolve(import.meta.dirname, 'projects.html'),
         about: resolve(import.meta.dirname, 'about.html'),
         resume: resolve(import.meta.dirname, 'resume.html'),
+        certification: resolve(import.meta.dirname, 'certification.html'),
+        more: resolve(import.meta.dirname, 'more.html'),
       },
     },
   },

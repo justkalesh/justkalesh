@@ -10,6 +10,8 @@ export function syncNavWithUrl(pathname) {
   const isProjects = pathname.includes('projects');
   const isAbout = pathname.includes('about');
   const isResume = pathname.includes('resume');
+  const isCertification = pathname.includes('certification');
+  const isMore = pathname.includes('more');
   
   
   // Update desktop nav items
@@ -22,7 +24,11 @@ export function syncNavWithUrl(pathname) {
       item.classList.add('active');
     } else if (isResume && href === 'resume.html') {
       item.classList.add('active');
-    } else if (!isProjects && !isAbout && !isResume && href === 'index.html') {
+    } else if (isCertification && href === 'certification.html') {
+      item.classList.add('active');
+    } else if (isMore && href === 'more.html') {
+      item.classList.add('active');
+    } else if (!isProjects && !isAbout && !isResume && !isCertification && !isMore && href === 'index.html') {
       item.classList.add('active');
     }
   });
@@ -33,6 +39,8 @@ export function syncNavWithUrl(pathname) {
      if (isProjects) brandEl.textContent = 'Projects';
      else if (isAbout) brandEl.textContent = 'About Me';
      else if (isResume) brandEl.textContent = 'Resume';
+     else if (isCertification) brandEl.textContent = 'Certification';
+     else if (isMore) brandEl.textContent = 'More';
      else brandEl.textContent = 'Home';
   }
 
@@ -45,7 +53,9 @@ export function syncNavWithUrl(pathname) {
     if (isProjects && href === 'projects.html') isActive = true;
     else if (isAbout && href === 'about.html') isActive = true;
     else if (isResume && href === 'resume.html') isActive = true;
-    else if (!isProjects && !isAbout && !isResume && href === 'index.html') isActive = true;
+    else if (isCertification && href === 'certification.html') isActive = true;
+    else if (isMore && href === 'more.html') isActive = true;
+    else if (!isProjects && !isAbout && !isResume && !isCertification && !isMore && href === 'index.html') isActive = true;
 
     if (isActive) {
       item.className = 'mobile-nav-item text-headline-sm text-primary font-extrabold px-8 py-3 rounded-full border-[3px] border-on-surface bg-surface-container shadow-[4px_4px_0px_0px_rgba(13,28,47,1)] transition-colors text-center';
