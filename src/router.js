@@ -1,9 +1,22 @@
 import { syncNavWithUrl } from './nav.js';
 import { initStickers } from './main.js';
 
+// Ensures we always fetch .html but display clean URLs
+function toFetchUrl(href) {
+  if (href.endsWith('.html')) return href;
+  if (href === '/' || href === '') return '/index.html';
+  return href.replace(/\/$/, '') + '.html';
+}
+
+function toCleanUrl(href) {
+  if (href === '/index.html' || href === 'index.html') return '/';
+  return href.replace(/\.html$/, '');
+}
+
 export async function navigate(href) {
   try {
-    const response = await fetch(href);
+    const fetchUrl = toFetchUrl(href);
+    const response = await fetch(fetchUrl);
     if (!response.ok) throw new Error('Network response was not ok');
     const text = await response.text();
     
@@ -14,7 +27,6 @@ export async function navigate(href) {
     const currentMain = document.querySelector('main');
     
     if (newMain && currentMain) {
-      // Fade out current content slightly for a smoother transition
       currentMain.style.opacity = '0';
       currentMain.style.transition = 'opacity 0.2s ease-out';
       
@@ -25,14 +37,14 @@ export async function navigate(href) {
         
         initStickers();
         
-        // Scroll to top automatically on route change
         window.scrollTo({ top: 0, behavior: 'instant' });
       }, 200);
     }
 
     document.title = doc.title;
-    window.history.pushState({}, '', href);
-    syncNavWithUrl(new URL(href, window.location.origin).pathname);
+    const cleanUrl = toCleanUrl(href);
+    window.history.pushState({}, '', cleanUrl);
+    syncNavWithUrl(cleanUrl);
 
   } catch (error) {
     console.error("Seamless navigation failed, falling back to hard reload", error);
@@ -43,7 +55,8 @@ export async function navigate(href) {
 // Handle browser back/forward buttons
 window.addEventListener('popstate', async () => {
   try {
-    const response = await fetch(window.location.href);
+    const fetchUrl = toFetchUrl(window.location.pathname);
+    const response = await fetch(fetchUrl);
     if (!response.ok) throw new Error('Network response was not ok');
     const text = await response.text();
     
